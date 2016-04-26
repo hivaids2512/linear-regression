@@ -21,8 +21,8 @@ print('Coefficients: \n', regr.coef_)
 print('Intercept: \n', regr.intercept_)
 print('Variance score: %.2f' % regr.score(X_test, y_test))
 
-print metrics.mean_absolute_error(y_test, y_pred)
-print metrics.mean_squared_error(y_test, y_pred)
+print metrics.mean_absolute_error(_test, y_pred)
+print metrics.mean_squared_error(_test, y_pred)
 print np.sqrt(metrics.mean_squared_error(y_test, y_pred))
 
 sb_plot = sb.pairplot(data, x_vars=['TV', 'Radio', 'Newspaper'], y_vars='Sales', size=7, aspect=0.7, kind='reg')
